@@ -71,7 +71,7 @@ header,
     position: relative;
     background:#FFF;
     z-index: 1;
-    visibility:hidden;
+  /*  visibility:hidden; */
   }
 
 nav{
