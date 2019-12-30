@@ -256,7 +256,8 @@ nav{
     top:10vh;
     width:50vw;
     height:50vh;
- 
+    left:0;
+    right:0;
 
     opacity: 1;
     background-repeat: no-repeat !important;
