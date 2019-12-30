@@ -76,7 +76,7 @@ header,
 
 nav{
     z-index:500 !important;
-    visibility:hidden;
+    /* visibility:hidden; */
 }
 
 .btn-suite{color: #43a5be;}
