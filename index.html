@@ -383,28 +383,34 @@
 
 <header>
     <div id="parallax-container"> 
-        <div class="container">                
+        <div class="container-fluid">                
             <div class="row text-center mt-5">
                 <div class="col">
                     <div class="phrase">Julien Goscicki</div>
                 </div>
             </div>
 
-            <div class="parallax-wrapper">
+           <div class="d-block d-xl-none">
+                <div class="parallax-wrapper">
+                        <div class="parallax-layer background-picture" data-depth="0"></div>
+                        <div class="parallax-layer under-logo" data-depth="0.5"></div>
+                        <div class="parallax-layer logo" data-depth="0"></div>
+                        <!--
+                <div class="parallax-layer figure2" data-depth="0.5"></div>
+                -->
+                </div>
+            </div>
+
+            <div class="d-none d-xl-block">
+                <div class="parallax-wrapper">
                     <div class="parallax-layer background-picture" data-depth="0"></div>
                     <div class="parallax-layer under-logo" data-depth="1"></div>
-                    <div class="parallax-layer logo" data-depth="0.2"></div>
+                    <div class="parallax-layer logo" data-depth="1.4"></div>
                     <!--
-             <div class="parallax-layer figure2" data-depth="0.1"></div>
-            -->
-            </div>
-            <div class="row">
-                <div class="col-12 text-center h-25">
-                    <div id="titre-principal" class="display-4 ">Graphiste - Web Designer - Développeur</div>
-                    <a href="#apropos" class="js-scrollTo "><i class="fa fa-chevron-down fa-5x"></i></a>
+                <div class="parallax-layer figure2" data-depth="0.5"></div>
 
+                -->
             </div>
-
         </div>
     </div><!--Fin Container-->
 
