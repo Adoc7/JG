@@ -17,9 +17,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body  id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="preload spinner-border" role="status"></div>
         <!-- FENETRES MODAL -->
     <section>
     <!-- Modal Guide asso -->
@@ -312,16 +315,14 @@
         </div>
         </div>
     </div>
-<!--<div class="spinner-border loader" role="status"></div>-->
     </section>
 
 <!--NAVABAR-->
-<section>
+<section id="nav-content">
 <nav class="px-lg-4 px-xl-5 navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <a class="px-xl-5 navbar-brand js-scrollTo" href="#top"> <img src="./images/logo-JG-white.svg" alt="Logo JG" />
             </a>
-           
-          
+                 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <div id="hexag-menu-top"></div>
                 <div id="hexag-menu-middle">
@@ -375,6 +376,7 @@
               </span> 
         </div>
 </nav>
+
 </section>
         
 <!--HEADER-->
@@ -382,45 +384,80 @@
 <section id="site-content">
 
 <header>
+ <div class="container-fluid"> 
+    <div class="row text-center mt-5">
+        <div class="col">
+            <div class="phrase">Julien Goscicki</div>
+        </div>
+    </div>  
+ 
+</div>   
+
+
+
     <div id="parallax-container"> 
-        <div class="container-fluid">                
-            <div class="row text-center mt-5">
-                <div class="col">
-                    <div class="phrase">Julien Goscicki</div>
+        <div class="container-fluid"> 
+
+          
+          
+            <div class="d-block">
+                <div class="parallax-wrapper">
+                
+                <div class="parallax-layer figure1" data-depth="0"></div>
+                <div class="parallax-layer figure2" data-depth="0.5"></div>
+                <div class="parallax-layer figure3" data-depth="0.8"></div>
+                <div class="parallax-layer picture" data-depth="1.2"></div>
+             </div>  
+             <div class="col-12 text-center h-25">
+    
+                <div class="d-none d-xl-block">
+                  <p class="titre-principal">Graphiste | Web Designer | Développeur</p>
+
                 </div>
+                <div class="d-block d-md-none titre-principal ">
+                  
+
+                    <p class="">Graphiste <br> Web Designer <br> Développeur</p>
+                    <a href="#apropos" class="js-scrollTo "><i class="fa fa-angle-down fa-5x"></i></a>    
+
+
+                </div>
+
             </div>
 
-           <div class="d-block d-xl-none">
+            </div>       
+     
+            <div class="d-none ">
                 <div class="parallax-wrapper">
                         <div class="parallax-layer background-picture" data-depth="0"></div>
                         <div class="parallax-layer under-logo" data-depth="0.5"></div>
                         <div class="parallax-layer logo" data-depth="0"></div>
-                        <!--
-                <div class="parallax-layer figure2" data-depth="0.5"></div>
-                -->
+                        
+            
                 </div>
             </div>
+        </div><!--Fin Container-fluid-->
+    </div><!--Fin Parallax-Container-->
+    
 
-            <div class="d-none d-xl-block">
-                <div class="parallax-wrapper">
-                    <div class="parallax-layer background-picture" data-depth="0"></div>
-                    <div class="parallax-layer under-logo" data-depth="1"></div>
-                    <div class="parallax-layer logo" data-depth="1.4"></div>
-                    <!--
-                <div class="parallax-layer figure2" data-depth="0.5"></div>
 
-                -->
+
+
+
+
+    <div class="container-fluid"> 
+        <div class="row">
+          
+    
             </div>
-        </div>
-                    <div class="row">
-            <div class="col-12 text-center h-25">
-                <div id="titre-principal" class="display-4 ">Graphiste - Web Designer - Développeur</div>
-                <a href="#apropos" class="js-scrollTo "><i class="fa fa-chevron-down fa-5x"></i></a>
+        </div><!--Fin Container-fluid-->
 
-        </div>
+         
+    
+         
+        
 
-    </div>
-    </div><!--Fin Container-->
+
 
 </header>
     <!--ACCUEIL-->
@@ -435,12 +472,16 @@
     </div>
 -->
     <div class="container mt-4 pt-4" id="top_apropos">
-        <div class="jumbotron">
-    
+        
 
 
-            
-       
+
+
+        <div class="jumbotron" 
+             data-aos="fade"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+         
                 <div class="row">
                     <div class="col-12 mb-2">
                         <h1>Bienvenue sur mon site web !</h1>
@@ -530,10 +571,12 @@
         <!---->
          <div class="container-fluid px-sm-5">
              <div class="row">
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-3  col-xl-3 white   text-center py-5 ">
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-3  col-xl-3 white   text-center py-5">
                      <p>APP MOBILE CORDOVA</p>                   
-                     <h2 class="title-part-2 pb-5">THREE.JS</h2>                
-                     <a href="#Modal3js"  data-toggle="modal" ><img src="images/screen-VR.jpg"  class="p-3 mb-5 img-fluid hoverable">  </a>                          
+                     <h2 class="title-part-2 pb-5">THREE.JS</h2>  
+                    <div class="col-12" data-aos="flip-left" data-aos-duration="2000">
+                        <a href="#Modal3js"   data-toggle="modal" ><img src="images/screen-VR.jpg"  class="p-3 mb-5 img-fluid hoverable">  </a>                          
+                    </div>    
                      <p>PROJET 3D DE</p>
                      <h2 class="title-part-3">VIRTUAL REALITY</h2>
                      <p class="title-part-4">The House of the Ballenesque</p>
@@ -549,8 +592,10 @@
                  <div class="col-12 col-sm-6 col-md-6 col-lg-3  col-xl-3 white  text-center py-5">
                      <p>CODAGE BACK-END</p>                       
                      <h2 class="title-part-2 pb-5">SYMFONY 4</h2>
-                     <a><img src="images/screen-symBNB.jpg" class="p-3 mb-5 img-fluid hoverable" alt="photo Symfony 4 SymBNB" data-toggle="modal" data-target="#ModalSymbnb"></a>                           
-                     <p>PROJET DE</p>
+                     <div class="col-12" data-aos="flip-right" data-aos-duration="2000">
+                        <a><img src="images/screen-symBNB.jpg" class="p-3 mb-5 img-fluid hoverable" alt="photo Symfony 4 SymBNB" data-toggle="modal" data-target="#ModalSymbnb"></a>                           
+                    </div>
+                        <p>PROJET DE</p>
                      <h2 class="title-part-3">LOCATION</h2>
                      <p class="title-part-4">IMMOBILIERE</p>
                      <p class='text-left pt-2 px-4 px-sm-2 px-md-1 px-lg-2 px-xl-4'>
@@ -567,7 +612,9 @@
                  <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3  white border border-white  text-center py-5">
                      <p>CODAGE BACK-END</p>       
                      <h2 class="title-part-2 pb-5">SYMFONY 4</h2>
-                     <a><img src="images/screen-symAgence.jpg" class="p-3 mb-5 img-fluid hoverable" alt="photo Symfony 4 SymAgence" data-toggle="modal" data-target="#ModalSymAgence"></a>
+                     <div class="col-12" data-aos="flip-left" data-aos-duration="2000">
+                     <a><img src="images/screen-symAgence.jpg" class="p-3 mb-5 img-fluid hoverable" alt="photo Symfony 4 SymAgence"></a>
+                    </div>
                      <p>PROJET DE</p>
                      <h2 class="title-part-3">vente</h2>
                      <p class="title-part-4">immobilière</p>
@@ -584,7 +631,9 @@
                      <p>CODAGE FRONT-END</p>
                      
                      <h2 class="title-part-2 pb-5">ANGULAR 6</h2>
-                     <a><img src="images/screen-angResto.jpg" class="p-3 mb-5 img-fluid hoverable" alt="photo Angular 6" data-toggle="modal" data-target="#ModalAngResto"></a>
+                     <div class="col-12" data-aos="flip-left" data-aos-duration="2000">
+                         <a><img src="images/screen-AngResto.jpg" class="p-3 mb-5 img-fluid hoverable" alt="photo Angular 6" data-toggle="modal" data-target="#ModalAngResto"></a>
+                    </div>
                      <p>PROJET DE</p>
                      <h2 class="title-part-3">réservation</h2>
                      <p class="title-part-4">au restaurant</p>
@@ -672,10 +721,16 @@
             <p>Vous souhaitez en savoir plus ?</p>                   
             <h2 class="title-part-2 pb-1"><strong>Visitez au format PDF</strong></h2>  
         </div>
-              <div class="col-12 col-lg-6 mb-2  pl-sm-5 pr-sm-5 pl-lg-5 pr-lg-3 ">
+
+
+
+
+
+     
+         <div class="col-12 col-lg-6 mb-2  pl-sm-5 pr-sm-5 pl-lg-5 pr-lg-3 ">
            
                     
-                <a href="https://adoc7.github.io/julien-g.com/images/book_print&web.pdf#toolbar=0"  
+                <a href="images/jg_book_print_web.pdf#toolbar=0"  
                    target="_blank"            
                    role="button" 
                    class="btn btn-outline-primary btn-block"
@@ -684,7 +739,7 @@
                 </a>         
             </div>
            
-            <div class="col-12 col-lg-6 mb-2  pl-sm-5 pr-sm-5 pl-lg-5 pr-lg-3 ">
+            <div class="col-12 col-lg-6 mb-2  pl-sm-5 pr-sm-5 pl-lg-3 pr-lg-5 ">
 
                 <a href="https://adoc7.github.io/julien-g.com/images/book_print.pdf#toolbar=0"  
                    target="_blank"            
@@ -695,7 +750,7 @@
                 </a>         
             
         </div>
-  
+                     
          <!-- Titre 3 -->
          <div id="dessin"></div>
          <div class="col-12  white border border-white  text-left">
@@ -1341,7 +1396,7 @@
                 <h2 class="title-part-5 mb-2">Contact</h2>
                    <!-- Default form contact -->
                    
-                <form class="text-center border border-light p-5" action="#!">
+                <form class="text-center border border-light p-5" action="#">
                     <p class="text-left pt-lg-3 mb-3"><span class="h5">*</span> Champs obligatoires</p>
                      <!-- Name -->
                     
@@ -1424,12 +1479,7 @@
                 <!-- Default form contact -->
             
             </div>
-         
-               
-                    
-            
-               
-           
+   
 
         <!-- Footer Elements -->
     </div>
@@ -1451,7 +1501,10 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <!-- MDB core JavaScript -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
-        
+               <!-- Effets au scoroll -->
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <!-- Loader JavaScript -->    
        <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
             <script type="text/javascript">
@@ -1464,12 +1517,22 @@
                 $("nav").css("visibility","visible").fadeIn();
                 $("#site-content").css("visibility","visible").fadeIn("slow");
                 })
-
-
-
                 
         </script> 
         -->
+        <script>
+            AOS.init();
+          </script>
+          <script>
+          $(function() {
+    $(".preload").fadeOut(2000, function() {
+        $("#site-content, #nav-content").fadeIn(1000);    
+        $("#site-content, #nav-content").css({"visibility":"visible"});   
+      
+
+    });
+});
+          </script>
        
 </body>
 </html>
