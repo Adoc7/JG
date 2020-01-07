@@ -46,17 +46,24 @@ html, body, header, .view {height: 100%;}
 }
 
 
-  .title-part-2,  .title-part-3, .titre-principal, h1, h2, h3.btn-text, h4, h5, h6, p, .navbar-text, a.nav-link, a.dropdown-item,  li,  span.d-block{font-family: montserrat, arial, sans-serif;}
+  .title-part-2,  .title-part-3, .titre-principal, .titre-chevron h1, h2, h3.btn-text, h4, h5, h6, p, .navbar-text, a.nav-link, a.dropdown-item,  li,  span.d-block{font-family: montserrat, arial, sans-serif;}
 
 .navbar{background-color: rgba(67, 165, 190,0.3);}
+
+
+
 
 .top-nav-collapse{background-color:var(--main-color-02);}
 
 
 @media only screen and (max-width: 768px) {
-    .navbar {background-color: var(--main-color-02);
+  
+      .navbar {background-color:var(--main-color-02);
+
+
     }
-}
+  }
+
 
 
   
@@ -149,7 +156,7 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     backface-visibility: hidden;
-   
+  
  
   }
 
@@ -159,7 +166,9 @@ nav{
 
 
   .parallax-wrapper {
+  
     position: absolute;
+
 
     width: 100%;
     height: 100%;
@@ -192,7 +201,7 @@ nav{
 
 
 
-.figure1 {
+/* .figure1 {
     z-index:200;
     background: url('../images/cosmo_pyramids576.jpg') no-repeat top ;
     background-size: cover;
@@ -231,6 +240,7 @@ nav{
     opacity:0.7;
    
 }
+*/
   
 
 
@@ -248,7 +258,7 @@ nav{
 
 
 .logo {
-    background: url('../images/logo-JG-white-opacity.svg') no-repeat center  !important;
+    background: url('../images/logo-JG-w.svg') no-repeat center  !important;
     margin:0 0!important;
     top:23vh;
     width:40%;
@@ -257,10 +267,11 @@ nav{
     background-repeat: no-repeat !important;
     background-size: contain !important;
     z-index: 1000!important;
+    opacity:0.8;
 }
 
 .under-logo  {
-    z-index:250 !important;
+    z-index:250;
  
     background: url('../images/white-sunlight992.png') no-repeat center !important;
     background-repeat: no-repeat;
@@ -286,7 +297,7 @@ nav{
     font-size: 12.5vw;
     font-weight: 100;
     letter-spacing: 0.5vw;
-    color: var(--main-color-02);
+    color: var(--main-color-01);
     
 
 }
@@ -296,7 +307,8 @@ nav{
     position:absolute;
     left:0;
     right:0;
-    height:100vh!important;
+    width:100%;
+    height:100vh;
 
  
   background: url('../images/cosmo_pyramids576.jpg') no-repeat top ;
@@ -315,7 +327,20 @@ nav{
 
 
 
-.titre-principal {
+
+.fa-angle-down{
+    color:white;
+    margin-top:-5vh;
+  }
+
+  .fa-angle-down{
+    color:black!important;
+    margin-top:-5vh;
+  }
+
+
+
+  /*.titre-principal, .titre-chevron {
     z-index: 1000;
   
     position:absolute;
@@ -335,18 +360,24 @@ nav{
     padding-top:-5vh;
 
 }
+*/
 
-.fa-angle-down{
-    color:white;
-    margin-top:-5vh;
-  }
+.titre-chevron{
+  margin-top:10%;
+  padding-top:0;
+  transform: translateY(-50%);
+}
+
+  .fa-chevron-down:hover{
+    font-size:8em!important;
+    color:var(--main-color-01)!important;
+}
+
 
 .fa-chevron-down{
     z-index:9999;
     
-    left: 50%; /* à 50%/50% du parent référent */
-    right: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%,-50%); /* décalage de 50% de sa propre taille */     
+     
     padding:6px!important;
     /*font-weight:bolder;*/
     /*border: 2px solid transparent;*/
@@ -354,7 +385,7 @@ nav{
     border:none !important;
     color:var(--main-color-01);
     transition: all 0.3s ease-in 0s;
-   ;
+   margin-top:-20%!important;
 
 }
 
@@ -378,7 +409,7 @@ h1{
     line-height:1em !important;
 }
 
-.title-part-2, .titre-principal{
+.title-part-2, .titre-principal, .titre-chevron{
     font-weight:bold;
     font-size: 1.8em !important;
     letter-spacing: -0.03em !important;
@@ -415,12 +446,14 @@ h6{
     left: 50%;
     transform: translate(-50%, -70%);
   }
-
   #centered-phone {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   left:50%;
+   transform: translate(-50%, -50%);
+   top:50%;
+
+
+
     font-size:5.5vw;
     font-weight:800;
     background-color: rgba(255,255,255,0.7);
@@ -430,6 +463,8 @@ h6{
     -webkit-text-stroke-color:var(--main-color-02);
     text-decoration: none;
     border:1vw solid var(--main-color-02);
+  
+
   }
 
   .flip_H{
@@ -454,7 +489,7 @@ h6{
         left:0;
         right:0;
         top:0;
-        height:100vh!important;
+        height:100vw!important;
         margin-top:-6%;
     
      
@@ -465,9 +500,12 @@ h6{
     }
     
     #logo-jg {
-        margin-top:24% !important;
-      width: 50%!important;
-      height: 50%!important;
+      top:60% !important;
+      padding-top:5% !important;
+     
+      width: 60%!important;
+      height: 60%!important;
+    
     
     
     }
@@ -488,8 +526,8 @@ h6{
         z-index:100 !important;
     }
     .phrase {  
-        margin-top:-6%;        
-        font-size: 10vw;
+        margin-top:-2%;        
+        font-size: 9.5vw;
         font-weight: 100;
         letter-spacing: 0.2vw;
     }
@@ -502,10 +540,18 @@ h6{
         padding-top:-50%;
     
     }
- 
+
+
+  .titre-chevron{
+  
+   margin-top:-50vh!important;
+    padding-top:0;
+    transform: translateY(-50%);
+
+  }
 
     .fa-chevron-down{
-        top:91%;
+        top:20%!important;
         font-size:8vw!important;
     }
  
@@ -560,7 +606,7 @@ h6{
         position:absolute;
         left:0;
         right:0;
-        height:100vh!important;
+        height:auto!important;
     
      
       background: url('../images/cosmo_pyramids992.jpg') no-repeat top ;
@@ -598,6 +644,7 @@ h6{
     }
 
   
+    /*
     .titre-principal {
         z-index: 1000;
         position:absolute;
@@ -616,8 +663,9 @@ h6{
         text-shadow: 0 0 6px rgba(255,255,255,0.92), 0 0 30px rgba(255,255,255,0.34), 0 0 12px rgba(67,165,190,0.52), 0 0 21px rgba(67,165,190,0.92), 0 0 34px rgba(67,165,190,0.78), 0 0 54px rgba(67,165,190,0.92);
   
     }
+    */
     .fa-chevron-down{
-        top:80%;
+        top:80%!important;
     }
 
     h1{
@@ -651,7 +699,7 @@ h6{
         margin-left:-1.9% !important;
     }
 
-    .figure1 {
+    /* .figure1 {
         z-index:200;
         background: url('../images/cosmo_pyramids992.jpg') no-repeat top ;
         background-size: cover;
@@ -691,6 +739,8 @@ h6{
        
     }
 
+    */
+
 
     
     
@@ -723,9 +773,10 @@ h6{
 .logo-jg {
     z-index:1000;
     position:absolute;
+    padding-top:2%;
     left:0;
     right:0;
-    height:100vh!important;
+    height:auto!important;
 
  
   background: url('../images/cosmo_pyramids1200.jpg') no-repeat top ;
@@ -806,37 +857,58 @@ h6{
 @media (min-width: 1200px) {   
     .background-picture{
         background: url('../images/cosmo_pyramids.jpg') no-repeat center ;
-        z-index: 100 !important;
+        z-index: 0 !important;
         background-size: cover;
       
-        top:-10%;
+        top:-10vh;
         width: 100%!important;
-        height: 100vh;
-        left:0;
+        height: 109vh;
+     
         
     }
 
+
+
+
+   
+    
+
     .logo {
-        z-index:1000;
-        top:20%;   
-        left:25%;
-        right:25%;
-        width:50%;
-        height:50%;
-       
-    }
+      margin-top:5vh!important;
+      left:25%;
+      right:25%;
+   
+      width: 50%!important;
+      height: 50vh;
+  }
+
+
+    /*.jumbotron{
+      margin-top:10%!important;
+    }*/
+    
+  
+
     .under-logo {
-        top:12vw;
-        left:0;
-        right:0;
-       
-        height:80%;
-        opacity:0.3;
-        z-index:100 !important;
+    
+      left:50%;
+    
+      width:100%;
+      transform: translateX(-50%);
+     
+      height:40vw!important;
+      z-index:8000 !important;
       
+      border:0px solid goldenrod;
+      opacity:0.3;
     }
+
+
+   
+    
+  
     .phrase {   
-        padding-top:12vh;
+        padding-top:8vh;
       
         color: var(--main-color-01);
         font-size:7vw;
@@ -868,33 +940,20 @@ h6{
     .title-part-1{
         margin-left:-5% !important;
     }
+    /*
     .titre-principal {  
        
-        margin-top:-5vh;   
-        font-size: 2vw;
-        padding-top:5%;
-        padding-bottom:7%;    
-       
-    }
+      margin-top:-5vh;   
+      font-size: 2vw;
+      padding-top:5%;
+      padding-bottom:7%;    
+     
+  }
+  */
 
-    .titre-principal {
-        z-index: 1000;
-        position:absolute;
-        left:0;
-        right:0;
-        top:33vh;
-        text-transform: uppercase;
-        font-size:2vw;
-        width:100%;
-        
-       
-        font-weight: 700;
-        color: rgba(255,255,255,0.8);
-        line-height:4vh;
-        text-shadow: 0 0 6px rgba(255,255,255,0.92), 0 0 30px rgba(255,255,255,0.34), 0 0 12px rgba(67,165,190,0.52), 0 0 21px rgba(67,165,190,0.92), 0 0 34px rgba(67,165,190,0.78), 0 0 54px rgba(67,165,190,0.92);
-        margin-top:35vh;
     
-    }
+
+    
     
     .fa-angle-down{
         z-index: 1000;
@@ -941,11 +1000,12 @@ h6{
 }
 
 .parallax {
-    position: relative;
-    background: url("../images/sea-sky-horizon.jpg") no-repeat center center fixed;
+   position:relative;
+    background: url("../images/sea-sky-horizon.jpg") no-repeat center center;
     background:url(" https://media.giphy.com/media/7GHRDluBmx9O8/giphy.gif") no-repeat center center fixed;
     background:url("http://media.giphy.com/media/Cf4qsIEIrFs6Q/giphy.gif") no-repeat center center fixed;
-    background-size: cover;
+    background-attachment: fixed !important;
+    background-size: cover!important;
     height: 50vw;
     width: 100%;
 }
@@ -1007,10 +1067,7 @@ a.btn.btn-outline-primary{
     }
     */
 
-.fa-chevron-down:hover{
-        font-size:8em!important;
-        color:var(--main-color)!important;
-}
+
   a.dropdown-item:active{
       background-color:rgba(67, 165, 190,0.2)!important;
   }
@@ -1077,3 +1134,16 @@ textarea {
         border:2px rgba(255, 255, 255,0.7) solid !important;
         border-radius: 2px!important;
   }
+
+
+ 
+  #logo-jg {
+  
+    opacity:0.9;
+  
+  
+  }
+  
+ 
+
+ 
