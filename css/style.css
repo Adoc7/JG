@@ -480,6 +480,8 @@ h6{
     font-size:2.3em!important;
 }
 
+
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
  
@@ -999,23 +1001,15 @@ h6{
     text-transform: uppercase;
 }
 
-.parallax {
-   position:relative;
-    background: url("../images/sea-sky-horizon.jpg") no-repeat center center;
-    background:url(" https://media.giphy.com/media/7GHRDluBmx9O8/giphy.gif") no-repeat center center fixed;
-    background:url("http://media.giphy.com/media/Cf4qsIEIrFs6Q/giphy.gif") no-repeat center center fixed;
-    background-attachment: fixed !important;
-    background-size: cover!important;
-    height: 50vw;
-    width: 100%;
-}
+
 
 body.modal #site-content{
+   filter: blur(5px)!important;
     -webkit-filter: blur(1px)!important;
-    -moz-filter: blur(1px)!important;
+    /*-moz-filter: blur(1px)!important;*/
     -o-filter: blur(1px)!important;
     -ms-filter: blur(1px)!important;
-    filter: blur(5px)!important;
+    
 }
 
 .modal-open .container-fluid, .modal-open  .container {
@@ -1074,7 +1068,6 @@ a.btn.btn-outline-primary{
 
  a.waves-effect{
     background-color:transparent!important;
-
   }
 
   .waves-light:active{
@@ -1146,4 +1139,16 @@ textarea {
   
  
 
- 
+  .parallax {
+    position:relative;
+     background: url("../images/sea-sky-horizon.jpg") no-repeat center center;
+     background:url(" https://media.giphy.com/media/7GHRDluBmx9O8/giphy.gif") no-repeat center center fixed;
+     background:url("http://media.giphy.com/media/Cf4qsIEIrFs6Q/giphy.gif") no-repeat center center fixed;
+     background-attachment: fixed !important;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover!important;
+     height: 40vh;
+     width: 100%;
+  }
