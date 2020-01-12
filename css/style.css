@@ -601,17 +601,7 @@ h6{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-
-
-.modal-open .container-fluid, .modal-open  .container {
-    -webkit-filter: blur(5px) grayscale(90%)!important;
-    -moz-filter:blur(5px) grayscale(90%);
-    -o-filter: blur(5px) grayscale(90%);
-    -ms-filter: blur(5px) grayscale(90%);
-    filter: blur(5px) grayscale(90%);
-}
-
+  
  
     .logo-jg {
         z-index:1000;
@@ -761,6 +751,14 @@ h6{
         color:white;
         margin-top:0vh;
       }
+
+      .modal-open .container-fluid, .modal-open  .container {
+        -webkit-filter: blur(5px) grayscale(90%);
+        -moz-filter: blur(5px) grayscale(90%);
+        -o-filter: blur(5px) grayscale(90%);
+        -ms-filter: blur(5px) grayscale(90%);
+        filter: blur(5px) grayscale(90%);
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -867,6 +865,13 @@ h6{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {   
+
+
+
+
+
+
+
     .background-picture{
         background: url('../images/cosmo_pyramids.jpg') no-repeat center ;
         z-index: 0 !important;
