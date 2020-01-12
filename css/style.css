@@ -1003,14 +1003,15 @@ h6{
 
 
 
-body.modal #site-content{
+/*body.modal #site-content{
    filter: blur(5px)!important;
     -webkit-filter: blur(1px)!important;
-    /*-moz-filter: blur(1px)!important;*/
+    -moz-filter: blur(1px)!important;
     -o-filter: blur(1px)!important;
     -ms-filter: blur(1px)!important;
     
 }
+
 
 .modal-open .container-fluid, .modal-open  .container {
     -webkit-filter: blur(5px) grayscale(90%);
@@ -1019,6 +1020,7 @@ body.modal #site-content{
     -ms-filter: blur(5px) grayscale(90%);
     filter: blur(5px) grayscale(90%);
 }
+*/
 
 a.btn.btn-outline-primary{
     color:  var(--main-color)!important;
