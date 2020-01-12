@@ -1002,7 +1002,7 @@ h6{
 }
 
 
-
+/*
 .modal-open .container-fluid, .modal-open  .container {
    filter:  grayscale(90%)!important;
     -webkit-filter:  grayscale(90%)!important;
@@ -1013,7 +1013,7 @@ h6{
 }
 
 
-/*
+
 .modal-open .container-fluid, .modal-open  .container {
     -webkit-filter: blur(5px) grayscale(90%);
  -moz-filter:blur(5px) grayscale(90%);
