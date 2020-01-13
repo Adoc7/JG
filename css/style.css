@@ -589,7 +589,7 @@ h6{
         margin-left:-1.2em!important;
         background-color: var(--main-color);
         height: 16px;
-        width: 35%;
+        width: 50%;
     }
 
 
@@ -704,9 +704,8 @@ h6{
     }
      .trait{   
         margin-left:0!important;
- 
         height: 13px;
-        width: 48%;
+        width: 35%;
     }
  
     .centered {
