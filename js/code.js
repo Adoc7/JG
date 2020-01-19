@@ -1,3 +1,18 @@
+var position = $(window).scrollTop(); 
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  if ($('header').width() <= 992 ){
+  if(scroll > position) {
+      $('nav').css("visibility","hidden");
+      console.log('scrollDown');
+  } else {
+       console.log('scrollUp');
+        $('nav').css("visibility","visible");
+  }
+  position = scroll;
+}
+}); 
+
 // Text en arc
     $('.phrase').arctext({ radius: 800 });
 
@@ -19,7 +34,7 @@ function parallaxMove (parallaxContainer, x, y, boxWidth, boxHeight) {
     var moveY = ((boxHeight / 2) - y) * (strength * depth);
 
     $(this).css({transform: "translate3d(" + moveX + "px, " + moveY + "px, 0)"});
-    //$(this).removeClass('is-out');
+    $(this).removeClass('is-out');
   });
 }
 
@@ -27,7 +42,7 @@ function parallaxMove (parallaxContainer, x, y, boxWidth, boxHeight) {
 function resetParallaxPosition (parallaxContainer) {
   $(parallaxContainer).find('.parallax-layer').each(function() {
     $(this).css({ transform: "translate3d( 0, 0, 0 )"});
-    //$(this).addClass('is-out');
+    $(this).addClass('is-out');
   });
   event.stopPropagation();
 }
@@ -72,12 +87,8 @@ if(!isMobile) {
   });
 }
 
-
          $(document).ready(function(){
-           
 
-          
-           
       
              /// Déplacement dans la page au clic
 
@@ -147,8 +158,3 @@ if(!isMobile) {
       $('.navbar-collapse').collapse('hide');
     });
 });
-
-
-
-
-
