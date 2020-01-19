@@ -60,8 +60,13 @@ html, body, header, .view {height: 100%;}
   #content:after{
     content:"Mobile Very Small Screen"
    }
+   header { max-width:100%; }
 
-  
+   @media only screen and (max-width: 992px){
+
+    header { width:992px; }
+
+}
 
 #site-content {
     min-height: 100%;
@@ -75,7 +80,12 @@ html, body, header, .view {height: 100%;}
 
 nav{
     z-index:500 !important;
-   /* visibility:hidden; */
+   visibility:visible; 
+}
+
+@media only screen and (max-width: 760px)
+{
+#indic-device { display: none; }
 }
 
 .btn-suite{color: var(--main-color);}
@@ -1167,4 +1177,3 @@ textarea {
   
  
 
- 
