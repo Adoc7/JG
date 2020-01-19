@@ -3,14 +3,19 @@ $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   if ($('header').width() <= 992 ){
   if(scroll > position) {
-      $('nav').css("visibility","hidden");
+      $('nav').stop(false,false).animate({top:'-70px'},"fast");
       console.log('scrollDown');
+   
   } else {
+       
+       $('nav').stop(false,false).animate({top:'0'},"fast");
        console.log('scrollUp');
-        $('nav').css("visibility","visible");
+
   }
-  position = scroll;
+ 
 }
+position = scroll;
+
 }); 
 
 // Text en arc
